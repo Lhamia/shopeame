@@ -1,0 +1,33 @@
+.contenedor{
+  .galeria{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap:20px;
+      &__items{
+          img{
+              width: 140px;
+              padding: 0, 20, 10, 20;
+              margin-top: 3px;
+          }
+        h3{
+            font-size: 13px;
+        }
+        h2{
+          font-size: 15px;
+        }
+        p{
+          font-size: 11px;
+        }
+        button{
+          color: blue;
+          background-color: white;
+          margin-left: 20px;
+          width: 80px;
+          border-radius: 4px;
+          border-color: blue;
+        }
+      }
+  }
+}

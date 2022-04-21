@@ -1,0 +1,35 @@
+<form class="formulario" (ngSubmit)="onSubmit()" [formGroup]="gestionForm">
+  <p>Nombre del producto:</p>
+  <input type="text" formControlName="nombre" />
+  <span
+    *ngIf="
+      gestionForm.controls['nombre'].errors &&
+      gestionForm.controls['nombre'].errors['required']
+    "
+    >requerido</span
+  >
+
+  <span
+    *ngIf="
+      gestionForm.controls['nombre'].errors &&
+      gestionForm.controls['nombre'].errors['maxlength']
+    "
+  ></span>
+
+  <p>Precio:</p>
+  <input type="text" formControlName="precio" />
+  <span *ngIf="gestionForm.controls['precio'].errors && ['required']"
+    >requerido</span
+  >
+  <p>Descripción del producto</p>
+  <input type="text" formControlName="descripcion" />
+  <span *ngIf="gestionForm.controls['descripcion'].errors && ['required']"
+    >requerido</span
+  >
+  <span>Opinión del producto</span>
+  <input type="text" formControlName="opinion" />
+  <span *ngIf="gestionForm.controls['opinion'].errors && ['required']"
+    >requerido</span
+  >
+  <button class="btn">Enviar</button>
+</form>

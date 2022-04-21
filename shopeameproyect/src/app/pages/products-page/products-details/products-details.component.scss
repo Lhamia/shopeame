@@ -1,0 +1,12 @@
+div{
+    padding: 20px;
+    h1, h2, p{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img{
+      margin-left: 40%;
+      width: 20%;
+    }
+  }
